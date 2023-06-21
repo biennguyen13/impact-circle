@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      ラクナル | 物件掲載で差別化を図る不動産デジタルサービスを一括発注
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="type" content="website" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./css/tw.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./libs/slick-1.8.1/jquery-2.2.0.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header - begin -->
+      <header
+        class="header fixed z-10 bg-white w-full"
+        style="border-bottom: 1px solid #00000010"
+      >
+        <div
+          ref="headerRef"
+          class="header-inner h-[62px] md:h-[90px] px-4 xl:px-10 flex items-center justify-between container mx-auto"
+        >
+          <a href="javascript:void(0)" class="flex-shrink-0">
+            <img
+              src="./assets/images/home-page/logo.png"
+              alt="logo"
+              class="logo inline-block"
+            />
+          </a>
+          <div
+            class="text-impact-black flex-shrink-0 gap-2 text-xs lg:text-base xl:gap-6 hidden md:flex"
+          >
+            <a class="leading-4" href="javascript:void(0)">サービス概要</a>
+            <a class="leading-4" href="javascript:void(0)"
+              >インパクトサークルの特徴</a
+            >
+            <a class="leading-4" href="javascript:void(0)">ユーザーの声</a>
+            <a class="leading-4" href="javascript:void(0)">提供車両</a>
+            <a class="leading-4" href="javascript:void(0)">ご利用の流れ</a>
+            <a class="leading-4" href="javascript:void(0)">よくあるご質問</a>
+          </div>
+
+          <button class="md:hidden" id="hamburger">
+            <img src="./assets/menu.png" alt="menu" class="h-6 w-6" />
+          </button>
+        </div>
+
+        <div
+          id="nav-mobile"
+          class="text-impact-black md:hidden fixed top-[62px] bg-white inset-0 w-[100vw] left-0 left-[-100%] text-xs"
+          style="transition: left 0.5s ease-in-out"
+        >
+          <div class="flex flex-col mt-4 gap-4 container mx-auto px-6">
+            <a class="leading-4" href="javascript:void(0)">サービス概要</a>
+            <a class="leading-4" href="javascript:void(0)"
+              >インパクトサークルの特徴</a
+            >
+            <a class="leading-4" href="javascript:void(0)">ユーザーの声</a>
+            <a class="leading-4" href="javascript:void(0)">提供車両</a>
+            <a class="leading-4" href="javascript:void(0)">ご利用の流れ</a>
+            <a class="leading-4" href="javascript:void(0)">よくあるご質問</a>
+          </div>
+        </div>
+      </header>
+      <!-- Header - end -->
+      <div class="page-layout pt-[62px] md:pt-[90px] mx-auto">
+        <div class="home-page">
+          <div class="banner relative">
+            <!-- <img src="./assets/images/home-page/banner.png" alt="banner" /> -->
+            <video
+              loop
+              autoplay
+              muted
+              src="./assets/file_example_MP4_1280_10MG.mp4"
+              class="object-cover min-h-[300px] w-full max-h-[780px]"
+            ></video>
+            <div class="absolute inset-0 flex justify-center items-center">
+              <h1
+                class="md:text-[48px] md:leading-[64px] text-[40px] leading-[52px] font-[900] text-white text-center"
+              >
+                <span
+                  id="sun-rise-1"
+                  class="overflow-hidden block text-[14px] md:text-[24px] leading-[14px] md:leading-[32px] font-[900] text-white"
+                >
+                  インパクトサークルのカーリース
+                </span>
+                <div class="mb-4"></div>
+                <span id="sun-rise-2">
+                  新たな一歩を踏み出す人を応援します
+                </span>
+              </h1>
+            </div>
+          </div>
+          <!-- Service - begin -->
+          <div
+            class="service px-6 md:px-0 mx-auto max-w-[800px] pb-[76px] pt-12 md:pt-[100px]"
+          >
+            <div observe class="text-center mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                Service
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[26px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                サービス概要
+              </h2>
+            </div>
+            <p
+              observe
+              class="mb-20 font-[700] md:text-[32px] md:leading-[64px] text-[20px] leading-[40px] text-justify"
+            >
+              インパクトサークルは、今後安定的に成長が見込まれる物流業界においてドライバーの方の収入向上や新たな雇用機会の創出を目的として、個人向けにカーリースの提供を行っています。従来の金融機関・リース会社による「過去」に基づく審査ではなく、「これからの」頑張りを評価する独自の審査基準によって、未来に向けて一歩踏み出す意志ある方を応援していきます。
+            </p>
+            <img
+              observe
+              src="./assets/images/home-page/service.png"
+              alt="service"
+            />
+          </div>
+          <!-- Service - end -->
+
+          <!-- Feature - begin -->
+          <div class="feature mx-auto pb-10 md:pb-[100px] bg-impact-blue-2">
+            <div
+              class="rectangle relative top-[-1px]"
+              style="
+                clip-path: polygon(0px 0px, 0% 100%, 100% 0px);
+                background-color: white;
+              "
+            ></div>
+            <div observe class="text-center mt-10 mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                Feature
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[38px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                インパクトサークルのリースの特徴
+              </h2>
+            </div>
+
+            <div
+              class="flex gap-8 md:gap-10 mb-16 md:mb-10 flex-wrap justify-center max-w-[1040px] mx-auto"
+            >
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-1.png"
+                  alt="独自の審査ノウハウに基づく高い審査通過率"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    独自の審査ノウハウに基づく 高い審査通過率
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-2.png"
+                  alt="クルマだけでなく安定収入のお仕事*も一緒にご提供"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    クルマだけでなく安定収入のお仕事*も一緒にご提供
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-3.png"
+                  alt="メンテナンス・任意保険まで込みのあんしんリースプラン"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    メンテナンス・任意保険まで込みのあんしんリースプラン
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-4.png"
+                  alt="リーズナブルな月額リース料"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    リーズナブルな 月額リース料
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-5.png"
+                  alt="リース期間終了後はそのまま自己所有が可能"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    リース期間終了後は そのまま自己所有が可能
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:px-4">
+              <div
+                class="max-w-[1120px] bg-white md:rounded-lg px-[24px] md:px-[75px] py-[48px] md:py-[64px] mx-auto"
+              >
+                <h3
+                  observe
+                  class="text-[26px] md:text-[32px] font-[900] leading-[40px] text-impact-blue-1 text-center"
+                >
+                  <span style="border-bottom: 3px solid #0198e0"
+                    >個人事業主の方が安心して生活を支えられる仕事が</span
+                  >
+                  <div class="hidden mb-3 md:block"></div>
+                  <span style="border-bottom: 3px solid #0198e0"
+                    >セットになった新しいカーリース</span
+                  >
+                </h3>
+
+                <p
+                  observe
+                  class="mt-8 md:mt-12 mb-8 font-[700] leading-[32px] text-[18px] md:leading-[36px] md:text-[22px] text-justify"
+                >
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しいカーリースサービスです。ドライバーの方に安心してお仕事をいただく為に、リースには任意保険が付保されており、リース料は毎月の収入でお支払い可能なリーズナブルな設定となっています。
+                </p>
+
+                <div
+                  class="flex justify-between items-center flex-col sm:flex-row"
+                >
+                  <img
+                    observe
+                    class="sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/pig.png"
+                    alt="40万円〜"
+                  />
+                  <img
+                    observe
+                    class="img-center sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/taxi-impact.png"
+                    alt="自動加入"
+                  />
+                  <img
+                    observe
+                    class="sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/taxi.png"
+                    alt="28,000円〜"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Feature - end -->
+
+          <!-- User voice - begin -->
+          <div class="user-voice mx-auto pb-20 md:pb-[136px] bg-white">
+            <div
+              data-v-c4ac8146=""
+              class="rectangle relative top-[-1px]"
+              style="
+                clip-path: polygon(0px 0px, 0% 100%, 100% 0px);
+                background-color: rgb(232, 245, 252);
+              "
+            ></div>
+            <div observe class="text-center mt-10 mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                User Voice
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[38px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                ユーザーの声
+              </h2>
+            </div>
+
+            <div
+              class="px-6 md:px-0 max-w-[836px] mx-auto text-impact-black text-[16px] leading-[24px] md:text-[22px] md:leading-[36px] font-[500] flex flex-col gap-16 sm:gap-10"
+            >
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- User voice - end  -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

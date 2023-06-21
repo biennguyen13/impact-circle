@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      ラクナル | 物件掲載で差別化を図る不動産デジタルサービスを一括発注
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="type" content="website" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./css/tw.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./libs/slick-1.8.1/jquery-2.2.0.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css" />
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <template id="faqTemplate">
+      <div class="faq-item">
+        <div
+          class="question-wrapper flex justify-between items-center cursor-pointer"
+        >
+          <div class="question flex mr-[30px]">
+            <p
+              class="mr-[10px] question-text leading-[24px] font-[700] text-[24px]"
+            >
+              Q
+            </p>
+            <p class="question-description text-[16px] lg:text-[20px]">
+              Question
+            </p>
+          </div>
+          <div class="button-action">
+            <div class="plus">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 11V14C9 14.2833 9.09583 14.5208 9.2875 14.7125C9.47917 14.9042 9.71667 15 10 15C10.2833 15 10.5208 14.9042 10.7125 14.7125C10.9042 14.5208 11 14.2833 11 14V11H14C14.2833 11 14.5208 10.9042 14.7125 10.7125C14.9042 10.5208 15 10.2833 15 10C15 9.71667 14.9042 9.47917 14.7125 9.2875C14.5208 9.09583 14.2833 9 14 9H11V6C11 5.71667 10.9042 5.47917 10.7125 5.2875C10.5208 5.09583 10.2833 5 10 5C9.71667 5 9.47917 5.09583 9.2875 5.2875C9.09583 5.47917 9 5.71667 9 6V9H6C5.71667 9 5.47917 9.09583 5.2875 9.2875C5.09583 9.47917 5 9.71667 5 10C5 10.2833 5.09583 10.5208 5.2875 10.7125C5.47917 10.9042 5.71667 11 6 11H9ZM10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10C20 11.3833 19.7375 12.6833 19.2125 13.9C18.6875 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6875 13.9 19.2125C12.6833 19.7375 11.3833 20 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z"
+                  fill="#444444"
+                />
+              </svg>
+            </div>
+            <div class="minus">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_345_2374"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                >
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_345_2374)">
+                  <path
+                    d="M7 13H17V11H7V13ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z"
+                    fill="#444444"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer flex">
+          <p class="answer-text font-[700] text-[24px] leading-[24px]">A</p>
+          <p class="answer-description">Answer</p>
+        </div>
+      </div>
+    </template>
+    <main>
+      <!-- Header - begin -->
+      <header
+        class="header fixed z-10 bg-white w-full"
+        style="border-bottom: 1px solid #00000010"
+      >
+        <div
+          ref="headerRef"
+          class="header-inner h-[62px] md:h-[90px] px-4 xl:px-10 flex items-center justify-between container mx-auto"
+        >
+          <a href="javascript:void(0)" class="flex-shrink-0">
+            <img
+              src="./assets/images/home-page/logo.png"
+              alt="logo"
+              class="logo inline-block"
+            />
+          </a>
+          <div
+            class="text-impact-black flex-shrink-0 gap-2 text-xs lg:text-base xl:gap-6 hidden md:flex"
+          >
+            <a class="leading-4" href="javascript:void(0)">サービス概要</a>
+            <a class="leading-4" href="javascript:void(0)"
+              >インパクトサークルの特徴</a
+            >
+            <a class="leading-4" href="javascript:void(0)">ユーザーの声</a>
+            <a class="leading-4" href="javascript:void(0)">提供車両</a>
+            <a class="leading-4" href="javascript:void(0)">ご利用の流れ</a>
+            <a class="leading-4" href="javascript:void(0)">よくあるご質問</a>
+          </div>
+
+          <button class="md:hidden" id="hamburger">
+            <img src="./assets/menu.png" alt="menu" class="h-6 w-6" />
+          </button>
+        </div>
+
+        <div
+          id="nav-mobile"
+          class="text-impact-black md:hidden fixed top-[62px] bg-white inset-0 w-[100vw] left-0 left-[-100%] text-xs"
+          style="transition: left 0.5s ease-in-out"
+        >
+          <div class="flex flex-col mt-4 gap-4 container mx-auto px-6">
+            <a class="leading-4" href="javascript:void(0)">サービス概要</a>
+            <a class="leading-4" href="javascript:void(0)"
+              >インパクトサークルの特徴</a
+            >
+            <a class="leading-4" href="javascript:void(0)">ユーザーの声</a>
+            <a class="leading-4" href="javascript:void(0)">提供車両</a>
+            <a class="leading-4" href="javascript:void(0)">ご利用の流れ</a>
+            <a class="leading-4" href="javascript:void(0)">よくあるご質問</a>
+          </div>
+        </div>
+      </header>
+      <!-- Header - end -->
+      <div class="page-layout pt-[62px] mb-[129px] md:pt-[90px] mx-auto">
+        <div class="home-page">
+          <div class="banner relative">
+            <!-- <img src="./assets/images/home-page/banner.png" alt="banner" /> -->
+            <video
+              loop
+              autoplay
+              muted
+              src="./assets/file_example_MP4_1280_10MG.mp4"
+              class="object-cover min-h-[300px] w-full max-h-[780px]"
+            ></video>
+            <div class="absolute inset-0 flex justify-center items-center">
+              <h1
+                class="md:text-[48px] md:leading-[64px] text-[40px] leading-[52px] font-[900] text-white text-center"
+              >
+                <span
+                  id="sun-rise-1"
+                  class="overflow-hidden block text-[14px] md:text-[24px] leading-[14px] md:leading-[32px] font-[900] text-white"
+                >
+                  インパクトサークルのカーリース
+                </span>
+                <div class="mb-4"></div>
+                <span id="sun-rise-2">
+                  新たな一歩を踏み出す人を応援します
+                </span>
+              </h1>
+            </div>
+          </div>
+          <!-- Service - begin -->
+          <div
+            class="service px-6 md:px-0 mx-auto max-w-[800px] pb-[76px] pt-12 md:pt-[100px]"
+          >
+            <div observe class="text-center mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                Service
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[26px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                サービス概要
+              </h2>
+            </div>
+            <p
+              observe
+              class="mb-20 font-[700] md:text-[32px] md:leading-[64px] text-[20px] leading-[40px] text-justify"
+            >
+              インパクトサークルは、今後安定的に成長が見込まれる物流業界においてドライバーの方の収入向上や新たな雇用機会の創出を目的として、個人向けにカーリースの提供を行っています。従来の金融機関・リース会社による「過去」に基づく審査ではなく、「これからの」頑張りを評価する独自の審査基準によって、未来に向けて一歩踏み出す意志ある方を応援していきます。
+            </p>
+            <img
+              observe
+              src="./assets/images/home-page/service.png"
+              alt="service"
+            />
+          </div>
+          <!-- Service - end -->
+
+          <!-- Feature - begin -->
+          <div class="feature mx-auto pb-10 md:pb-[100px] bg-impact-blue-2">
+            <div
+              class="rectangle relative top-[-1px]"
+              style="
+                clip-path: polygon(0px 0px, 0% 100%, 100% 0px);
+                background-color: white;
+              "
+            ></div>
+            <div observe class="text-center mt-10 mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                Feature
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[38px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                インパクトサークルのリースの特徴
+              </h2>
+            </div>
+
+            <div
+              class="flex gap-8 md:gap-10 mb-16 md:mb-10 flex-wrap justify-center max-w-[1040px] mx-auto"
+            >
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-1.png"
+                  alt="独自の審査ノウハウに基づく高い審査通過率"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    独自の審査ノウハウに基づく 高い審査通過率
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-2.png"
+                  alt="クルマだけでなく安定収入のお仕事*も一緒にご提供"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    クルマだけでなく安定収入のお仕事*も一緒にご提供
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-3.png"
+                  alt="メンテナンス・任意保険まで込みのあんしんリースプラン"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    メンテナンス・任意保険まで込みのあんしんリースプラン
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-4.png"
+                  alt="リーズナブルな月額リース料"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    リーズナブルな 月額リース料
+                  </p>
+                </div>
+              </div>
+              <div
+                observe
+                class="rounded-lg bg-white overflow-hidden max-w-[320px]"
+              >
+                <img
+                  src="./assets/images/home-page/feature-5.png"
+                  alt="リース期間終了後はそのまま自己所有が可能"
+                />
+                <div class="p-6">
+                  <p class="text-[18px] leading-[26px] font-[500] text-center">
+                    リース期間終了後は そのまま自己所有が可能
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:px-4">
+              <div
+                class="max-w-[1120px] bg-white md:rounded-lg px-[24px] md:px-[75px] py-[48px] md:py-[64px] mx-auto"
+              >
+                <h3
+                  observe
+                  class="text-[26px] md:text-[32px] font-[900] leading-[40px] text-impact-blue-1 text-center"
+                >
+                  <span style="border-bottom: 3px solid #0198e0"
+                    >個人事業主の方が安心して生活を支えられる仕事が</span
+                  >
+                  <div class="hidden mb-3 md:block"></div>
+                  <span style="border-bottom: 3px solid #0198e0"
+                    >セットになった新しいカーリース</span
+                  >
+                </h3>
+
+                <p
+                  observe
+                  class="mt-8 md:mt-12 mb-8 font-[700] leading-[32px] text-[18px] md:leading-[36px] md:text-[22px] text-justify"
+                >
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しいカーリースサービスです。ドライバーの方に安心してお仕事をいただく為に、リースには任意保険が付保されており、リース料は毎月の収入でお支払い可能なリーズナブルな設定となっています。
+                </p>
+
+                <div
+                  class="flex justify-between items-center flex-col sm:flex-row"
+                >
+                  <img
+                    observe
+                    class="sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/pig.png"
+                    alt="40万円〜"
+                  />
+                  <img
+                    observe
+                    class="img-center sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/taxi-impact.png"
+                    alt="自動加入"
+                  />
+                  <img
+                    observe
+                    class="sm:w-[33%] xs:w-[65%]"
+                    src="./assets/images/home-page/taxi.png"
+                    alt="28,000円〜"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Feature - end -->
+
+          <!-- User voice - begin -->
+          <div class="user-voice mx-auto pb-20 md:pb-[136px] bg-white">
+            <div
+              data-v-c4ac8146=""
+              class="rectangle relative top-[-1px]"
+              style="
+                clip-path: polygon(0px 0px, 0% 100%, 100% 0px);
+                background-color: rgb(232, 245, 252);
+              "
+            ></div>
+            <div observe class="text-center mt-10 mb-10 md:mb-20">
+              <p
+                class="text-[16px] md:text-[24px] leading-[24px] opacity-60 font-[600] ff-roboto"
+              >
+                User Voice
+              </p>
+              <svg
+                width="33"
+                height="4"
+                viewBox="0 0 33 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="underline text-center mx-auto"
+              >
+                <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+              </svg>
+              <h2
+                class="mt-6 text-[26px] leading-[38px] md:text-[48px] md:leading-[48px] font-[700] text-impact-black"
+              >
+                ユーザーの声
+              </h2>
+            </div>
+
+            <div
+              class="px-6 md:px-0 max-w-[836px] mx-auto text-impact-black text-[16px] leading-[24px] md:text-[22px] md:leading-[36px] font-[500] flex flex-col gap-16 sm:gap-10"
+            >
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+              </div>
+
+              <div
+                observe
+                class="p-6 md:p-10 rounded-lg bg-impact-blue-2 flex sm:gap-4 justify-between relative"
+              >
+                <div
+                  class="flex-shrink-0 absolute sm:static right-6 bottom-[-32px] flex sm:block items-end"
+                >
+                  <img
+                    class="sm:mb-4 w-[64px] h-[64px] md:w-[120px] md:h-[120px] order-1 ml-2 sm:ml-0"
+                    src="./assets/images/home-page/person-1.png"
+                    alt="20代 男性"
+                  />
+                  <p
+                    class="text-center text-[14px] md:text-[16px] leading-[16px] font-[500] mb-2"
+                  >
+                    20代 男性
+                  </p>
+                </div>
+                <p>
+                  インパクトサークルのカーリースは、車両をリースで提供するだけの従来のカーリースとは異なり、物流企業とのパートナー連携を通じて、個人事業主のドライバーの方が生活を支えられる安定したお仕事と収入もセットで提供する新しい
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- User voice - end  -->
+
+          <!-- Products - begin -->
+          <section class="product">
+            <div
+              observe
+              class="product-bg"
+              style="
+                background-image: url(./assets/images/home-page/product-bg.png);
+              "
+            ></div>
+            <div
+              observe
+              id="productSlider"
+              class="slider-wrapper max-w-[840px] md:w-[80%]"
+            >
+              <div class="slider-item">
+                <div class="flex items-center flex-col py-[5px]">
+                  <h3
+                    class="text-center product-info-title text-[16px] lg:text-[24px]"
+                  >
+                    Vehicle
+                    <span class="underline text-center">
+                      <svg
+                        width="33"
+                        height="4"
+                        viewBox="0 0 33 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="underline text-center mx-auto"
+                      >
+                        <rect
+                          x="0.5"
+                          width="32"
+                          height="4"
+                          fill="#9BDED2"
+                        ></rect>
+                      </svg>
+                    </span>
+                  </h3>
+                  <h2
+                    class="mt-[24px] font-[700] text-[26px] lg:text-[48px] text-center mb-[40px] lg:mb-[80px]"
+                  >
+                    提供車両例
+                  </h2>
+
+                  <div class="product-img max-w-[643px] mb-[16px]">
+                    <img
+                      class="w-max"
+                      src="assets/images/slider/1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="text-[18px] lg:text-[24px] font-[700]">
+                    ダイハツ ハイゼットカーゴ
+                  </p>
+
+                  <p class="lg:text-[18px] text-[14px] mt-[8px] font-[700]">
+                    グレード スペシャル 5ドア
+                  </p>
+                  <button class="btn-pdf lg:mt-[40px] mt-[20px]">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_345_2216"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="25"
+                      >
+                        <rect
+                          y="0.0495605"
+                          width="24"
+                          height="24"
+                          fill="#D9D9D9"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_345_2216)">
+                        <path
+                          d="M9.42308 10.4342H10.6539C10.8718 10.4342 11.0545 10.3605 11.2019 10.213C11.3494 10.0656 11.4231 9.88289 11.4231 9.66494V8.43419C11.4231 8.21624 11.3494 8.03354 11.2019 7.88611C11.0545 7.73866 10.8718 7.66494 10.6539 7.66494H9.03848C8.93591 7.66494 8.84616 7.7034 8.76923 7.78034C8.69231 7.85725 8.65385 7.94699 8.65385 8.04956V12.0496C8.65385 12.1521 8.69231 12.2419 8.76923 12.3188C8.84616 12.3957 8.93591 12.4342 9.03848 12.4342C9.14103 12.4342 9.23077 12.3957 9.3077 12.3188C9.38462 12.2419 9.42308 12.1521 9.42308 12.0496V10.4342ZM9.42308 9.66494V8.43419H10.6539V9.66494H9.42308ZM14.3846 12.4342C14.6026 12.4342 14.7853 12.3605 14.9327 12.213C15.0801 12.0656 15.1538 11.8829 15.1538 11.6649V8.43419C15.1538 8.21624 15.0801 8.03354 14.9327 7.88611C14.7853 7.73866 14.6026 7.66494 14.3846 7.66494H12.8462C12.7436 7.66494 12.6538 7.7034 12.5769 7.78034C12.5 7.85725 12.4616 7.94699 12.4616 8.04956V12.0496C12.4616 12.1521 12.5 12.2419 12.5769 12.3188C12.6538 12.3957 12.7436 12.4342 12.8462 12.4342H14.3846ZM13.2308 11.6649V8.43419H14.3846V11.6649H13.2308ZM17.1538 10.4342H18.1538C18.2564 10.4342 18.3462 10.3957 18.4231 10.3188C18.5 10.2419 18.5385 10.1521 18.5385 10.0496C18.5385 9.94699 18.5 9.85725 18.4231 9.78034C18.3462 9.7034 18.2564 9.66494 18.1538 9.66494H17.1538V8.43419H18.1538C18.2564 8.43419 18.3462 8.39572 18.4231 8.31879C18.5 8.24187 18.5385 8.15213 18.5385 8.04956C18.5385 7.94699 18.5 7.85725 18.4231 7.78034C18.3462 7.7034 18.2564 7.66494 18.1538 7.66494H16.7692C16.6667 7.66494 16.5769 7.7034 16.5 7.78034C16.4231 7.85725 16.3846 7.94699 16.3846 8.04956V12.0496C16.3846 12.1521 16.4231 12.2419 16.5 12.3188C16.5769 12.3957 16.6667 12.4342 16.7692 12.4342C16.8718 12.4342 16.9615 12.3957 17.0385 12.3188C17.1154 12.2419 17.1538 12.1521 17.1538 12.0496V10.4342ZM8.11538 17.0496C7.65513 17.0496 7.27083 16.8954 6.9625 16.5871C6.65417 16.2787 6.5 15.8944 6.5 15.4342V4.66494C6.5 4.20469 6.65417 3.82039 6.9625 3.51206C7.27083 3.20373 7.65513 3.04956 8.11538 3.04956H18.8846C19.3449 3.04956 19.7292 3.20373 20.0375 3.51206C20.3458 3.82039 20.5 4.20469 20.5 4.66494V15.4342C20.5 15.8944 20.3458 16.2787 20.0375 16.5871C19.7292 16.8954 19.3449 17.0496 18.8846 17.0496H8.11538ZM8.11538 16.0496H18.8846C19.0385 16.0496 19.1795 15.9855 19.3077 15.8573C19.4359 15.729 19.5 15.588 19.5 15.4342V4.66494C19.5 4.5111 19.4359 4.37008 19.3077 4.24186C19.1795 4.11366 19.0385 4.04956 18.8846 4.04956H8.11538C7.96154 4.04956 7.82052 4.11366 7.6923 4.24186C7.5641 4.37008 7.5 4.5111 7.5 4.66494V15.4342C7.5 15.588 7.5641 15.729 7.6923 15.8573C7.82052 15.9855 7.96154 16.0496 8.11538 16.0496ZM5.11538 20.0496C4.65513 20.0496 4.27083 19.8954 3.9625 19.5871C3.65417 19.2787 3.5 18.8944 3.5 18.4342V7.16494C3.5 7.02327 3.54798 6.90452 3.64393 6.80869C3.73989 6.71285 3.85881 6.66494 4.00067 6.66494C4.14252 6.66494 4.26121 6.71285 4.35672 6.80869C4.45224 6.90452 4.5 7.02327 4.5 7.16494V18.4342C4.5 18.588 4.5641 18.7291 4.6923 18.8573C4.8205 18.9855 4.96153 19.0496 5.11538 19.0496H16.3846C16.5263 19.0496 16.645 19.0975 16.7409 19.1935C16.8367 19.2895 16.8846 19.4084 16.8846 19.5502C16.8846 19.6921 16.8367 19.8108 16.7409 19.9063C16.645 20.0018 16.5263 20.0496 16.3846 20.0496H5.11538Z"
+                          fill="#0198E0"
+                        />
+                      </g>
+                    </svg>
+                    <span class="lg:text-[18px] text-[14px]">
+                      リースプラン詳細
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="flex items-center flex-col py-[5px]">
+                  <h3
+                    class="text-center product-info-title text-[16px] lg:text-[24px]"
+                  >
+                    Vehicle
+                    <span class="underline text-center">
+                      <svg
+                        width="33"
+                        height="4"
+                        viewBox="0 0 33 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="underline text-center mx-auto"
+                      >
+                        <rect
+                          x="0.5"
+                          width="32"
+                          height="4"
+                          fill="#9BDED2"
+                        ></rect>
+                      </svg>
+                    </span>
+                  </h3>
+                  <h2
+                    class="mt-[24px] font-[700] text-[26px] lg:text-[48px] text-center mb-[40px] lg:mb-[80px]"
+                  >
+                    提供車両例
+                  </h2>
+
+                  <div class="product-img max-w-[643px] mb-[16px]">
+                    <img
+                      class="w-max"
+                      src="assets/images/slider/1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="text-[18px] lg:text-[24px] font-[700]">
+                    ダイハツ ハイゼットカーゴ
+                  </p>
+
+                  <p class="lg:text-[18px] text-[14px] mt-[8px] font-[700]">
+                    グレード スペシャル 5ドア
+                  </p>
+                  <button class="btn-pdf lg:mt-[40px] mt-[20px]">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_345_2216"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="25"
+                      >
+                        <rect
+                          y="0.0495605"
+                          width="24"
+                          height="24"
+                          fill="#D9D9D9"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_345_2216)">
+                        <path
+                          d="M9.42308 10.4342H10.6539C10.8718 10.4342 11.0545 10.3605 11.2019 10.213C11.3494 10.0656 11.4231 9.88289 11.4231 9.66494V8.43419C11.4231 8.21624 11.3494 8.03354 11.2019 7.88611C11.0545 7.73866 10.8718 7.66494 10.6539 7.66494H9.03848C8.93591 7.66494 8.84616 7.7034 8.76923 7.78034C8.69231 7.85725 8.65385 7.94699 8.65385 8.04956V12.0496C8.65385 12.1521 8.69231 12.2419 8.76923 12.3188C8.84616 12.3957 8.93591 12.4342 9.03848 12.4342C9.14103 12.4342 9.23077 12.3957 9.3077 12.3188C9.38462 12.2419 9.42308 12.1521 9.42308 12.0496V10.4342ZM9.42308 9.66494V8.43419H10.6539V9.66494H9.42308ZM14.3846 12.4342C14.6026 12.4342 14.7853 12.3605 14.9327 12.213C15.0801 12.0656 15.1538 11.8829 15.1538 11.6649V8.43419C15.1538 8.21624 15.0801 8.03354 14.9327 7.88611C14.7853 7.73866 14.6026 7.66494 14.3846 7.66494H12.8462C12.7436 7.66494 12.6538 7.7034 12.5769 7.78034C12.5 7.85725 12.4616 7.94699 12.4616 8.04956V12.0496C12.4616 12.1521 12.5 12.2419 12.5769 12.3188C12.6538 12.3957 12.7436 12.4342 12.8462 12.4342H14.3846ZM13.2308 11.6649V8.43419H14.3846V11.6649H13.2308ZM17.1538 10.4342H18.1538C18.2564 10.4342 18.3462 10.3957 18.4231 10.3188C18.5 10.2419 18.5385 10.1521 18.5385 10.0496C18.5385 9.94699 18.5 9.85725 18.4231 9.78034C18.3462 9.7034 18.2564 9.66494 18.1538 9.66494H17.1538V8.43419H18.1538C18.2564 8.43419 18.3462 8.39572 18.4231 8.31879C18.5 8.24187 18.5385 8.15213 18.5385 8.04956C18.5385 7.94699 18.5 7.85725 18.4231 7.78034C18.3462 7.7034 18.2564 7.66494 18.1538 7.66494H16.7692C16.6667 7.66494 16.5769 7.7034 16.5 7.78034C16.4231 7.85725 16.3846 7.94699 16.3846 8.04956V12.0496C16.3846 12.1521 16.4231 12.2419 16.5 12.3188C16.5769 12.3957 16.6667 12.4342 16.7692 12.4342C16.8718 12.4342 16.9615 12.3957 17.0385 12.3188C17.1154 12.2419 17.1538 12.1521 17.1538 12.0496V10.4342ZM8.11538 17.0496C7.65513 17.0496 7.27083 16.8954 6.9625 16.5871C6.65417 16.2787 6.5 15.8944 6.5 15.4342V4.66494C6.5 4.20469 6.65417 3.82039 6.9625 3.51206C7.27083 3.20373 7.65513 3.04956 8.11538 3.04956H18.8846C19.3449 3.04956 19.7292 3.20373 20.0375 3.51206C20.3458 3.82039 20.5 4.20469 20.5 4.66494V15.4342C20.5 15.8944 20.3458 16.2787 20.0375 16.5871C19.7292 16.8954 19.3449 17.0496 18.8846 17.0496H8.11538ZM8.11538 16.0496H18.8846C19.0385 16.0496 19.1795 15.9855 19.3077 15.8573C19.4359 15.729 19.5 15.588 19.5 15.4342V4.66494C19.5 4.5111 19.4359 4.37008 19.3077 4.24186C19.1795 4.11366 19.0385 4.04956 18.8846 4.04956H8.11538C7.96154 4.04956 7.82052 4.11366 7.6923 4.24186C7.5641 4.37008 7.5 4.5111 7.5 4.66494V15.4342C7.5 15.588 7.5641 15.729 7.6923 15.8573C7.82052 15.9855 7.96154 16.0496 8.11538 16.0496ZM5.11538 20.0496C4.65513 20.0496 4.27083 19.8954 3.9625 19.5871C3.65417 19.2787 3.5 18.8944 3.5 18.4342V7.16494C3.5 7.02327 3.54798 6.90452 3.64393 6.80869C3.73989 6.71285 3.85881 6.66494 4.00067 6.66494C4.14252 6.66494 4.26121 6.71285 4.35672 6.80869C4.45224 6.90452 4.5 7.02327 4.5 7.16494V18.4342C4.5 18.588 4.5641 18.7291 4.6923 18.8573C4.8205 18.9855 4.96153 19.0496 5.11538 19.0496H16.3846C16.5263 19.0496 16.645 19.0975 16.7409 19.1935C16.8367 19.2895 16.8846 19.4084 16.8846 19.5502C16.8846 19.6921 16.8367 19.8108 16.7409 19.9063C16.645 20.0018 16.5263 20.0496 16.3846 20.0496H5.11538Z"
+                          fill="#0198E0"
+                        />
+                      </g>
+                    </svg>
+                    <span class="lg:text-[18px] text-[14px]">
+                      リースプラン詳細
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="flex items-center flex-col py-[5px]">
+                  <h3
+                    class="text-center product-info-title text-[16px] lg:text-[24px]"
+                  >
+                    Vehicle
+                    <span class="underline text-center">
+                      <svg
+                        width="33"
+                        height="4"
+                        viewBox="0 0 33 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="underline text-center mx-auto"
+                      >
+                        <rect
+                          x="0.5"
+                          width="32"
+                          height="4"
+                          fill="#9BDED2"
+                        ></rect>
+                      </svg>
+                    </span>
+                  </h3>
+                  <h2
+                    class="mt-[24px] font-[700] text-[26px] lg:text-[48px] text-center mb-[40px] lg:mb-[80px]"
+                  >
+                    提供車両例
+                  </h2>
+
+                  <div class="product-img max-w-[643px] mb-[16px]">
+                    <img
+                      class="w-max"
+                      src="assets/images/slider/1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="text-[18px] lg:text-[24px] font-[700]">
+                    ダイハツ ハイゼットカーゴ
+                  </p>
+
+                  <p class="lg:text-[18px] text-[14px] mt-[8px] font-[700]">
+                    グレード スペシャル 5ドア
+                  </p>
+                  <button class="btn-pdf lg:mt-[40px] mt-[20px]">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_345_2216"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="25"
+                      >
+                        <rect
+                          y="0.0495605"
+                          width="24"
+                          height="24"
+                          fill="#D9D9D9"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_345_2216)">
+                        <path
+                          d="M9.42308 10.4342H10.6539C10.8718 10.4342 11.0545 10.3605 11.2019 10.213C11.3494 10.0656 11.4231 9.88289 11.4231 9.66494V8.43419C11.4231 8.21624 11.3494 8.03354 11.2019 7.88611C11.0545 7.73866 10.8718 7.66494 10.6539 7.66494H9.03848C8.93591 7.66494 8.84616 7.7034 8.76923 7.78034C8.69231 7.85725 8.65385 7.94699 8.65385 8.04956V12.0496C8.65385 12.1521 8.69231 12.2419 8.76923 12.3188C8.84616 12.3957 8.93591 12.4342 9.03848 12.4342C9.14103 12.4342 9.23077 12.3957 9.3077 12.3188C9.38462 12.2419 9.42308 12.1521 9.42308 12.0496V10.4342ZM9.42308 9.66494V8.43419H10.6539V9.66494H9.42308ZM14.3846 12.4342C14.6026 12.4342 14.7853 12.3605 14.9327 12.213C15.0801 12.0656 15.1538 11.8829 15.1538 11.6649V8.43419C15.1538 8.21624 15.0801 8.03354 14.9327 7.88611C14.7853 7.73866 14.6026 7.66494 14.3846 7.66494H12.8462C12.7436 7.66494 12.6538 7.7034 12.5769 7.78034C12.5 7.85725 12.4616 7.94699 12.4616 8.04956V12.0496C12.4616 12.1521 12.5 12.2419 12.5769 12.3188C12.6538 12.3957 12.7436 12.4342 12.8462 12.4342H14.3846ZM13.2308 11.6649V8.43419H14.3846V11.6649H13.2308ZM17.1538 10.4342H18.1538C18.2564 10.4342 18.3462 10.3957 18.4231 10.3188C18.5 10.2419 18.5385 10.1521 18.5385 10.0496C18.5385 9.94699 18.5 9.85725 18.4231 9.78034C18.3462 9.7034 18.2564 9.66494 18.1538 9.66494H17.1538V8.43419H18.1538C18.2564 8.43419 18.3462 8.39572 18.4231 8.31879C18.5 8.24187 18.5385 8.15213 18.5385 8.04956C18.5385 7.94699 18.5 7.85725 18.4231 7.78034C18.3462 7.7034 18.2564 7.66494 18.1538 7.66494H16.7692C16.6667 7.66494 16.5769 7.7034 16.5 7.78034C16.4231 7.85725 16.3846 7.94699 16.3846 8.04956V12.0496C16.3846 12.1521 16.4231 12.2419 16.5 12.3188C16.5769 12.3957 16.6667 12.4342 16.7692 12.4342C16.8718 12.4342 16.9615 12.3957 17.0385 12.3188C17.1154 12.2419 17.1538 12.1521 17.1538 12.0496V10.4342ZM8.11538 17.0496C7.65513 17.0496 7.27083 16.8954 6.9625 16.5871C6.65417 16.2787 6.5 15.8944 6.5 15.4342V4.66494C6.5 4.20469 6.65417 3.82039 6.9625 3.51206C7.27083 3.20373 7.65513 3.04956 8.11538 3.04956H18.8846C19.3449 3.04956 19.7292 3.20373 20.0375 3.51206C20.3458 3.82039 20.5 4.20469 20.5 4.66494V15.4342C20.5 15.8944 20.3458 16.2787 20.0375 16.5871C19.7292 16.8954 19.3449 17.0496 18.8846 17.0496H8.11538ZM8.11538 16.0496H18.8846C19.0385 16.0496 19.1795 15.9855 19.3077 15.8573C19.4359 15.729 19.5 15.588 19.5 15.4342V4.66494C19.5 4.5111 19.4359 4.37008 19.3077 4.24186C19.1795 4.11366 19.0385 4.04956 18.8846 4.04956H8.11538C7.96154 4.04956 7.82052 4.11366 7.6923 4.24186C7.5641 4.37008 7.5 4.5111 7.5 4.66494V15.4342C7.5 15.588 7.5641 15.729 7.6923 15.8573C7.82052 15.9855 7.96154 16.0496 8.11538 16.0496ZM5.11538 20.0496C4.65513 20.0496 4.27083 19.8954 3.9625 19.5871C3.65417 19.2787 3.5 18.8944 3.5 18.4342V7.16494C3.5 7.02327 3.54798 6.90452 3.64393 6.80869C3.73989 6.71285 3.85881 6.66494 4.00067 6.66494C4.14252 6.66494 4.26121 6.71285 4.35672 6.80869C4.45224 6.90452 4.5 7.02327 4.5 7.16494V18.4342C4.5 18.588 4.5641 18.7291 4.6923 18.8573C4.8205 18.9855 4.96153 19.0496 5.11538 19.0496H16.3846C16.5263 19.0496 16.645 19.0975 16.7409 19.1935C16.8367 19.2895 16.8846 19.4084 16.8846 19.5502C16.8846 19.6921 16.8367 19.8108 16.7409 19.9063C16.645 20.0018 16.5263 20.0496 16.3846 20.0496H5.11538Z"
+                          fill="#0198E0"
+                        />
+                      </g>
+                    </svg>
+                    <span class="lg:text-[18px] text-[14px]">
+                      リースプラン詳細
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Products - end -->
+
+          <!-- Flow - begin -->
+          <section observe class="flow py-[80px] md:py-[184px]">
+            <div class="container mx-auto px-6 md:px-0">
+              <h3
+                class="text-center flow-info-title text-[16px] lg:text-[24px]"
+              >
+                Flow
+                <span class="underline text-center">
+                  <svg
+                    width="33"
+                    height="4"
+                    viewBox="0 0 33 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="underline text-center mx-auto"
+                  >
+                    <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+                  </svg>
+                </span>
+              </h3>
+              <h2
+                class="mt-[24px] font-[700] text-center mb-[80px] text-[26px] lg:text-[48px]"
+              >
+                ご利用の流れ
+              </h2>
+              <div class="">
+                <div class="flow-box">
+                  <span>
+                    弊社パートナー企業の配送ドライバーパートナー（個人事業主）募集案件に応募
+                  </span>
+                </div>
+
+                <div class="down-icon">
+                  <svg
+                    width="32"
+                    height="19"
+                    viewBox="0 0 32 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9 17.8996L1.19996 5.19961C0.266625 4.26628 0.049958 3.18294 0.549958 1.94961C1.04996 0.716276 1.96662 0.0996094 3.29996 0.0996094H28.7C30.0333 0.0996094 30.95 0.716276 31.45 1.94961C31.95 3.18294 31.7333 4.26628 30.8 5.19961L18.1 17.8996C17.7666 18.2329 17.4333 18.4663 17.1 18.5996C16.7666 18.7329 16.4 18.7996 16 18.7996C15.6 18.7996 15.2333 18.7329 14.9 18.5996C14.5666 18.4663 14.2333 18.2329 13.9 17.8996Z"
+                      fill="#9BDED2"
+                    />
+                  </svg>
+                </div>
+
+                <div class="flow-box">
+                  <span>
+                    弊社パートナー企業からの弊社リースサービスのご紹介
+                  </span>
+                </div>
+
+                <div class="down-icon">
+                  <svg
+                    width="32"
+                    height="19"
+                    viewBox="0 0 32 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9 17.8996L1.19996 5.19961C0.266625 4.26628 0.049958 3.18294 0.549958 1.94961C1.04996 0.716276 1.96662 0.0996094 3.29996 0.0996094H28.7C30.0333 0.0996094 30.95 0.716276 31.45 1.94961C31.95 3.18294 31.7333 4.26628 30.8 5.19961L18.1 17.8996C17.7666 18.2329 17.4333 18.4663 17.1 18.5996C16.7666 18.7329 16.4 18.7996 16 18.7996C15.6 18.7996 15.2333 18.7329 14.9 18.5996C14.5666 18.4663 14.2333 18.2329 13.9 17.8996Z"
+                      fill="#9BDED2"
+                    />
+                  </svg>
+                </div>
+                <div class="flow-box">
+                  <span> リース申込書および事前アンケートの提出 </span>
+                </div>
+
+                <div class="down-icon">
+                  <svg
+                    width="32"
+                    height="19"
+                    viewBox="0 0 32 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9 17.8996L1.19996 5.19961C0.266625 4.26628 0.049958 3.18294 0.549958 1.94961C1.04996 0.716276 1.96662 0.0996094 3.29996 0.0996094H28.7C30.0333 0.0996094 30.95 0.716276 31.45 1.94961C31.95 3.18294 31.7333 4.26628 30.8 5.19961L18.1 17.8996C17.7666 18.2329 17.4333 18.4663 17.1 18.5996C16.7666 18.7329 16.4 18.7996 16 18.7996C15.6 18.7996 15.2333 18.7329 14.9 18.5996C14.5666 18.4663 14.2333 18.2329 13.9 17.8996Z"
+                      fill="#9BDED2"
+                    />
+                  </svg>
+                </div>
+                <div class="flow-box">
+                  <span> 審査完了、リース契約締結 </span>
+                </div>
+
+                <div class="down-icon">
+                  <svg
+                    width="32"
+                    height="19"
+                    viewBox="0 0 32 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9 17.8996L1.19996 5.19961C0.266625 4.26628 0.049958 3.18294 0.549958 1.94961C1.04996 0.716276 1.96662 0.0996094 3.29996 0.0996094H28.7C30.0333 0.0996094 30.95 0.716276 31.45 1.94961C31.95 3.18294 31.7333 4.26628 30.8 5.19961L18.1 17.8996C17.7666 18.2329 17.4333 18.4663 17.1 18.5996C16.7666 18.7329 16.4 18.7996 16 18.7996C15.6 18.7996 15.2333 18.7329 14.9 18.5996C14.5666 18.4663 14.2333 18.2329 13.9 17.8996Z"
+                      fill="#9BDED2"
+                    />
+                  </svg>
+                </div>
+                <div class="flow-box">
+                  <span> 納車および契約時期の調整 </span>
+                </div>
+
+                <div class="down-icon">
+                  <svg
+                    width="32"
+                    height="19"
+                    viewBox="0 0 32 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9 17.8996L1.19996 5.19961C0.266625 4.26628 0.049958 3.18294 0.549958 1.94961C1.04996 0.716276 1.96662 0.0996094 3.29996 0.0996094H28.7C30.0333 0.0996094 30.95 0.716276 31.45 1.94961C31.95 3.18294 31.7333 4.26628 30.8 5.19961L18.1 17.8996C17.7666 18.2329 17.4333 18.4663 17.1 18.5996C16.7666 18.7329 16.4 18.7996 16 18.7996C15.6 18.7996 15.2333 18.7329 14.9 18.5996C14.5666 18.4663 14.2333 18.2329 13.9 17.8996Z"
+                      fill="#9BDED2"
+                    />
+                  </svg>
+                </div>
+                <div class="flow-box">
+                  <span> 納車、リース開始 </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Flow - end -->
+
+          <!-- FAQ - begin -->
+          <section observe class="px-6 md:px-0">
+            <div class="faq">
+              <div class="container mx-auto">
+                <h3
+                  class="text-center faq-info-title text-[16px] lg:text-[24px]"
+                >
+                  FAQ
+
+                  <span class="underline text-center">
+                    <svg
+                      width="33"
+                      height="4"
+                      viewBox="0 0 33 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="underline text-center mx-auto"
+                    >
+                      <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+                    </svg>
+                  </span>
+                </h3>
+                <h2
+                  class="mt-[24px] font-[700] text-[26px] lg:text-[48px] text-center mb-[80px]"
+                >
+                  よくあるご質問
+                </h2>
+
+                <div class="faq-list mx-auto max-w-[780px] mt-[100px]"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ - end -->
+
+          <!-- Company profile - begin -->
+          <section observe class="company-profile">
+            <div
+              class="company-bg"
+              style="
+                background-image: url('./assets/images/home-page/company-bg.png');
+              "
+            ></div>
+            <div class="container px-6 mx-auto">
+              <div class="company-profile-content">
+                <h3
+                  class="text-center company-info-title text-[16px] lg:text-[24px]"
+                >
+                  Company Profile
+                  <span class="underline text-center">
+                    <svg
+                      width="33"
+                      height="4"
+                      viewBox="0 0 33 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="underline text-center mx-auto"
+                    >
+                      <rect x="0.5" width="32" height="4" fill="#9BDED2"></rect>
+                    </svg>
+                  </span>
+                </h3>
+                <h2
+                  class="mt-[24px] font-[700] text-[26px] lg:text-[48px] text-center"
+                >
+                  会社概要
+                </h2>
+
+                <div class="mt-[40px]"></div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    会社名
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    インパクトサークル株式会社（英語表記：Impact Circle, Inc.）
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    代表者
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    代表取締役社長/CEO 高橋 智志
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    監査役
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    小林寛三
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    顧問弁護士
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    AZX総合法律事務所
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    本 社
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    〒108-0075 東京都港区港南2-16-2 太陽生命品川ビル28F
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    設立日
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    2021年7月29日
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    資本金
+                  </p>
+
+                  <p class="cpn-block-value text-[16px] lg:text-[18px]">
+                    2億5,500万円（資本準備金含む）
+                  </p>
+                </div>
+
+                <div class="company-profile-block flex">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    事業内容
+                  </p>
+
+                  <ol>
+                    <li>・社会インパクト投資プラットフォームの提供</li>
+                    <li>
+                      ・新興国等での社会インパクト型マイクロファイナンスの提供
+                    </li>
+                  </ol>
+                </div>
+
+                <div class="company-profile-block flex items-center">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    受賞・
+                    <br />
+                    所属団体等
+                  </p>
+
+                  <div
+                    class="px-0 mt-[10px] lg:mt-0 lg:px-[40px] grid gap-4 grid-cols-2 md:grid-cols-3"
+                  >
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/2.png" alt="" />
+                    </div>
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/4.png" alt="" />
+                    </div>
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/5.png" alt="" />
+                    </div>
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/3.png" alt="" />
+                    </div>
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/1.png" alt="" />
+                    </div>
+                    <div class="img-wrapper flex justify-center items-center">
+                      <img src="./assets/images/LP/6.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="company-profile-block flex items-center">
+                  <p
+                    class="cpn-block-label text-[14px] lg:text-[18px] w-[150px]"
+                  >
+                    株主
+                  </p>
+
+                  <div class="mt-[10px] lg:mt-0">
+                    <div class="grid gap-4 grid-cols-3">
+                      <div class="img-wrapper flex items-center">
+                        <img src="./assets/images/LP_2/3.png" alt="" />
+                      </div>
+                      <div class="img-wrapper flex items-center">
+                        <img src="./assets/images/LP_2/2.png" alt="" />
+                      </div>
+                      <div class="img-wrapper flex items-center">
+                        <img src="./assets/images/LP_2/1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <p class="mt-[24px] text-[14px]">
+                      中島 徳至（Global Mobility Service 代表取締役社長）
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="company-copy-right mt-[40px] w-[300px] mx-auto text-center"
+            >
+              <div class="img-wrapper mx-auto flex justify-center">
+                <img src="./assets/images/logo.png" alt="" />
+              </div>
+
+              <p class="mt-[24px] copy-right">
+                ©IMPACT CIRCLE. All right Reserved
+              </p>
+            </div>
+          </section>
+          <!-- Company profile - end -->
+        </div>
+      </div>
+
+      <!-- Footer - begin -->
+      <footer id="footer" class="scroll">
+        <div class="footer-content-box">
+          <div class="content">
+            <h3>ドライバーパートナーに応募</h3>
+            <p>※外部サイトにリンクします</p>
+          </div>
+          <div class="chev-right">
+            <svg
+              width="11"
+              height="19"
+              viewBox="0 0 11 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.91238 18.6689C0.712241 18.446 0.609324 18.1946 0.60363 17.9147C0.597935 17.6348 0.700852 17.3891 0.91238 17.1775L8.10684 9.98307L0.895297 2.76082C0.695158 2.56779 0.597935 2.321 0.60363 2.02045C0.609324 1.71989 0.712241 1.46954 0.91238 1.2694C1.1353 1.04649 1.38387 0.937878 1.65809 0.943572C1.93228 0.949267 2.17516 1.05788 2.38671 1.2694L10.1762 9.06961C10.3137 9.20708 10.4134 9.34918 10.4753 9.4959C10.5373 9.64263 10.5683 9.80502 10.5683 9.98307C10.5683 10.154 10.5373 10.3146 10.4753 10.4649C10.4134 10.6152 10.3137 10.7591 10.1762 10.8965L2.4038 18.6689C2.19227 18.8805 1.94655 18.9816 1.66663 18.9724C1.38671 18.9631 1.1353 18.8619 0.91238 18.6689Z"
+                fill="#0199E0"
+              />
+            </svg>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer - end -->
+    </main>
+  </body>
+</html>

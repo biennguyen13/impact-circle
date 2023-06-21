@@ -11,6 +11,9 @@ module.exports = {
         "*": {
           fontFamily: `"Noto Sans JP", sans-serif !important`,
         },
+        ".ff-roboto": {
+          fontFamily: `"Roboto", sans-serif !important`,
+        },
       })
       addComponents({})
       addUtilities({})
